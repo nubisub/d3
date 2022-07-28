@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>United States GDP</title>
+    <!-- make favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/25/25231.png" type="image/x-icon">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         .bar {
             fill: #364F6B;
             max-width: 100%;
@@ -23,7 +25,7 @@
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
         body{
@@ -39,17 +41,25 @@
             margin: 0;
             font-family: 'Roboto', sans-serif;
         }
-
+        #tooltip{
+            font-family: 'Roboto', sans-serif;
+            z-index: 1;
+            position: absolute;
+            background-color: #F5F5F5;
+            border-radius: .2em;
+            padding: .5em 1em;
+            line-height: 1.5em;
+        }
 
     </style>
 </head>
 <body>
+    <script src="1barchart.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
     <div id="container">
         <h1 id="title">United States GDP</h1>
         <div id="chart"></div>
     </div>
-
-    <script src="1barchart.js"></script>
 </body>
 </html>
