@@ -4,62 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>United States GDP</title>
-    <!-- make favicon -->
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/25/25231.png" type="image/x-icon">
+    <title>Doping in Professional Bicycle Racing</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        .bar {
-            fill: #364F6B;
-            max-width: 100%;
+        #title{
+            font-family: 'Roboto', sans-serif;
         }
-        .bar:hover {
-            fill: #9ac2b8;
-        }
-        #container {
-            width: 1000px;
-            min-height: 467px;
-            border-radius: .3em;
-            background-color: #BBDED6;
-            padding: 1.5em;
+
+        .chart{
+            background-color: #EAFFD0;
+            border: 1px solid #d5e9bc;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
+            border-radius: .3em;
+            padding: 20px;
+            padding-top: 5px;
         }
         body{
+            background-color: #95E1D3;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             min-height: 100vh;
-            background-color: #61C0BF;
             margin: 0;
-        }
-        #title{
-            text-align: center;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
         }
         #tooltip{
             font-family: 'Roboto', sans-serif;
             z-index: 1;
             position: absolute;
-            background-color: #F5F5F5;
+            background-color: #A8D8EA;
             border-radius: .2em;
             padding: .5em 1em;
             line-height: 1.5em;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: .8em;
+        }
+        .dot{
+            stroke: black;
+            stroke-width: 1px;
         }
 
+        .dot:hover{
+            cursor: pointer;
+            
+        }
     </style>
 </head>
 <body>
-    <script src="1barchart.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="scatterplot.js" ></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
-    <div id="container">
-        <h1 id="title">United States GDP</h1>
-        <div id="chart"></div>
-    </div>
 </body>
 </html>

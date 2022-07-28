@@ -100,38 +100,34 @@ window.onload = async () => {
 			return i * 10/ dataset.length;
 		});
 
-		// create the tooltip
-		const tooltip = d3
-			.select("body")
-			.append("div")
-			.attr("id", "tooltip")
-			.style("opacity", 0);
-		
-
-		d3
-			.selectAll("rect")
-			.on("mouseover", function (d) {
-				tooltip
-					.transition()
-					.duration(200)
-					.style("opacity", 1);
-				tooltip
-					.html(`${d[0]}<br>$${d[1]}`)
-					.style("left", d3.event.pageX + 10+ "px")
-					.style("top", h+20 + "px")
-					.attr("data-date", d[0])
-					.attr("data-gdp", d[1]);
-			}
-			)
-			.on("mouseout", function (d) {
-				tooltip
-					.transition()
-					.duration(500)
-					.style("opacity", 0);
-			}
-			);
-
-
-
-
+	// create the tooltip
+	const tooltip = d3
+		.select("body")
+		.append("div")
+		.attr("id", "tooltip")
+		.style("opacity", 0);
+	
+	// hober the bar when the mouse is over it
+	d3
+		.selectAll("rect")
+		.on("mouseover", function (d) {
+			tooltip
+				.transition()
+				.duration(200)
+				.style("opacity", 1);
+			tooltip
+				.html(`${d[0]}<br>$${d[1]}`)
+				.style("left", d3.event.pageX + 10+ "px")
+				.style("top", h+20 + "px")
+				.attr("data-date", d[0])
+				.attr("data-gdp", d[1]);
+		}
+		)
+		.on("mouseout", function (d) {
+			tooltip
+				.transition()
+				.duration(500)
+				.style("opacity", 0);
+		}
+		);
 };
