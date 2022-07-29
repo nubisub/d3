@@ -7,9 +7,9 @@
 
 <img width="120px" height="auto" src="https://images.prismic.io/plotly-marketing-website-2/69e12d6a-fb65-4b6e-8423-9465a29c6028_plotly-logo-lg.png?auto=compress,format">
 
-> [`02. Heatmap`](https://nubisub.github.io/d3/heatmap/)
+> [`03. Heatmap`](https://nubisub.github.io/d3/heatmap/)
+
+<img width="120px" height="auto" src="https://raw.githubusercontent.com/plouc/nivo/master/nivo.png">
+
+> [`04. Treemap`](https://nubisub.github.io/d3/treemap/)
 </div>
-
-
-
-
