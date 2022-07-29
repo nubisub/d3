@@ -1,5 +1,5 @@
 <div align="center">
-<img width="65px" height="auto" src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png">
+<img width="60px" height="auto" src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png">
 
 > [`01. Bar Chart`](https://nubisub.github.io/d3/bar/)  
 > [`02. ScatterPlot`](https://nubisub.github.io/d3/scatterplot/)
