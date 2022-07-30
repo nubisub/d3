@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   text-align: center;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background-color:#B2C8DF;
 }
 
 .logo {
@@ -42,4 +46,8 @@
 .App{
   height:500px;
   width:1000px
+}
+body{
+  width:100vw;
+  height:100vh;
 }
